@@ -5,28 +5,30 @@ public class OrderItem {
     private int id;
     private Product product;
     private int num;
+    private Order order;
 
-    public void setId(int id) {
-        this.id = id;
+    public Order getOrder() {
+        return order;
     }
-
-    public void setNum(int num) {
-        this.num = num;
+    public void setOrder(Order order) {
+        this.order = order;
     }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
     public int getId() {
         return id;
     }
-
+    public void setId(int id) {
+        this.id = id;
+    }
+    public Product getProduct() {
+        return product;
+    }
+    public void setProduct(Product product) {
+        this.product = product;
+    }
     public int getNum() {
         return num;
     }
-
-    public Product getProduct() {
-        return product;
+    public void setNum(int num) {
+        this.num = num;
     }
 }

@@ -6,13 +6,13 @@ import java.sql.*;
 
 public class OrderDAO {
 
-    public void insert(Order o){
+    public void insert(Order o) {
+
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
             Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/cart?characterEncoding=UTF-8",
-                    "root","123456");
-
+                    "root", "123456");
 
             String sql = "insert into order_ values(null,?)";
 
@@ -39,5 +39,7 @@ public class OrderDAO {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
     }
+
 }
